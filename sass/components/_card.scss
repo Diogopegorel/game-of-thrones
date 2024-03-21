@@ -1,0 +1,165 @@
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &--side {
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+
+
+            &-1 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-primary, .8), rgba($color-primary-dark, .8));
+
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-primary, .8), rgba($color-primary-dark, .8));
+
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-primary, .8), rgba($color-primary-dark, .8));
+            }
+        }
+    }
+
+
+    &:hover &--side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &--side--back {
+        transform: rotateY(0);
+    }
+
+    // Frontside style
+    &-picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: color;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary, $color-primary-dark),
+                url(../img/rob-barateon.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary, $color-primary-dark),
+                url(../img/tyrion-lannister.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary, $color-primary-dark),
+                url(../img/theon-greyjoy.jpg);
+        }
+    }
+
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 10rem;
+        right: .5rem;
+    }
+
+    &-heading--span--1 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, .75),
+                rgba($color-primary-dark, .75));
+        padding: 1.5rem 2rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    &-heading--span--2 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, .75),
+                rgba($color-primary-dark, .75));
+        padding: 1.5rem 2rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    &-heading--span--3 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, .75),
+                rgba($color-primary-dark, .75));
+        padding: 1.5rem 2rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    &-details {
+        padding: 1rem 3rem 1rem 0;
+
+        ul {
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light2;
+                }
+            }
+        }
+    }
+
+    //Backside style
+    &-cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &-price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 5rem;
+    }
+
+    &-price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding-bottom: 0;
+    }
+
+    &-price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}

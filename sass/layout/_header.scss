@@ -1,0 +1,52 @@
+.header {
+    height: 120vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary, .7),
+            rgba($color-primary-dark, .7)),
+        url(../img/herogot.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__berto {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+
+    &__bertoImg {
+        height: 11rem;
+        opacity: .4;
+
+        animation-name: getBigger;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+    }
+
+    &__logo {
+        height: 11rem;
+        opacity: .5;
+
+        animation-name: getBigger;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
