@@ -9,6 +9,17 @@
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    }
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
+        margin-bottom: 5rem;
+
+    }
+
+
     &__logo-box {
         position: absolute;
         top: 4rem;
@@ -23,7 +34,7 @@
 
     &__bertoImg {
         height: 11rem;
-        opacity: .4;
+        opacity: .8;
 
         animation-name: getBigger;
         animation-duration: 1s;
@@ -33,7 +44,7 @@
 
     &__logo {
         height: 11rem;
-        opacity: .5;
+        opacity: .8;
 
         animation-name: getBigger;
         animation-duration: 1s;

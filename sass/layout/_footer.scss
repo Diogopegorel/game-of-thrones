@@ -36,6 +36,14 @@
         position: absolute;
         bottom: 5rem;
         right: 10rem;
+
+        @include respond(tab-port) {
+            position: absolute;
+            bottom: 5rem;
+            right: 50%;
+            transform: translate(50%);
+
+        }
     }
 
     &-link {

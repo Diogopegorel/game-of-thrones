@@ -1,5 +1,6 @@
 .form {
     margin-top: -5rem;
+
     &-group:not(:last-child) {
         margin-bottom: 2rem;
     }
@@ -16,6 +17,7 @@
         width: 70%;
         display: block;
         transition: all .3s;
+
 
         &:focus {
             outline: none;
@@ -50,6 +52,11 @@
     &-radio-group {
         width: 45%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &-radio-input {
