@@ -405,8 +405,8 @@ body {
 @media (max-width: 900px) {
   .navigation-button {
     position: fixed;
-    bottom: 10rem;
-    right: 2rem;
+    top: 20rem;
+    right: 10rem;
   }
 }
 .navigation-background {
@@ -424,7 +424,7 @@ body {
   .navigation-background {
     position: fixed;
     top: 20.5rem;
-    right: 2.5rem;
+    right: 10.5rem;
   }
 }
 .navigation-nav {
@@ -865,6 +865,9 @@ body {
 }
 @media (max-width: 600px) {
   .story {
+    max-width: 330px;
+    width: 100%;
+    padding: 4rem 0;
     transform: skewX(0);
   }
 }
