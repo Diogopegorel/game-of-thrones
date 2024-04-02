@@ -10,11 +10,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
     @include respond(tab-port) {
-        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
 
     @include respond(phone) {
-        clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         margin-bottom: 5rem;
 
     }
