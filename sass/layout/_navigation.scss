@@ -19,7 +19,7 @@
         @include respond(tab-port) {
             position: fixed;
             top: 20rem;
-            right: 10rem;
+            right: 3rem;
 
         }
     }
@@ -37,7 +37,7 @@
         @include respond(tab-port) {
             position: fixed;
             top: 20.5rem;
-            right: 10.5rem;
+            right: 3.5rem;
         }
 
         transition: all .8s;

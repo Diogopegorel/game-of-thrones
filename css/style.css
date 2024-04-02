@@ -409,7 +409,7 @@ body {
   .navigation-button {
     position: fixed;
     top: 20rem;
-    right: 10rem;
+    right: 3rem;
   }
 }
 .navigation-background {
@@ -427,7 +427,7 @@ body {
   .navigation-background {
     position: fixed;
     top: 20.5rem;
-    right: 10.5rem;
+    right: 3.5rem;
   }
 }
 .navigation-nav {
