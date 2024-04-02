@@ -241,7 +241,7 @@ body {
 }
 @media (max-width: 600px) {
   .header {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     margin-bottom: 5rem;
   }
 }
@@ -1040,7 +1040,7 @@ body {
     padding: 20rem 0;
   }
   .section-about h2 {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
 }
 
